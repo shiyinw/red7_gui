@@ -1,0 +1,5 @@
+# Red7
+
+This project is a desktop GUI application for card game Red7.
+
+Made by Sherlyn Shiyin Wang
