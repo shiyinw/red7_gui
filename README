@@ -1,0 +1,45 @@
+ ./red7 [PATH] [PATH] … [-m|g number]
+
+OPTIONS:
+
+PATH			the PATH of the program
+-m number		Set the mode, default 0. m=0 means 7-card-hand long game, otherwise it means m-card-hand short game.
+-g number		Set the total number of games, default 1
+
+EXAMPLE:
+./red7 ./trivial ./trivial ./pure_random -m 0 -g 100
+
+--There are 3 players, two with the program trivial, one with the program pure_random, the game with 7-card-hand, last until one player reaches 35 points. There are 100 games in one simulation.
+
+PLAYERS PROGRAM
+./filename
+
+CARDs REPRESENTATION
+Each card is represented by a two-digit integer, the first digit is the number，and the second digit shows the color (7-RED, 6-ORANGE, 5-YELLOW, 4-GREEN, 3-BLUE, 2-INDIGO, 1-VIOLET). For example, 63 represents BLUE 6. (So it's convenient to compare two cards.)
+
+INPUT FORMAT
+A player’s program only received standard input stdin, so you can use scanf or cin to get the input numbers. The format of the input:
+
+Current table (only what you can see):
+--the first line has two numbers: the total number of players, and the index of you.
+--the second line has one number: current rule (1~7)
+--the third line shows the cards in your hands: the first number s is how many cards in your hand, then the following s numbers are the cards. 
+--the next 2*num_players lines shows the information you can see for all players, listed by the index (0 ~ num_players-1), including yourself:
+  ## the first line for each player is the number of cards in its hand.
+  ## the second line shows the cards in its palette: the first number s is how many cards in its palette, then the following s numbers are the cards.
+  ## if the player is already eliminated, it just shows 0s for this two lines.
+  
+History of this game:
+--the next line shows the scores of all players at the beginning of this game, only meaningful for long game.
+--the next line shows the deck at the beginning of this game, also with the first number being its size. In the case of short game, it is just 50 numbers: 49, 11, 12,..., 76, 77. In the case of long game, the winning cards will be kept by the winner, so the deck will be smaller.
+--the following lines show the play of each round, with 3 numbers in each line: the first number is the index of this player, the second number is the rule card, and the third number is the card put into its palette. 0 means no such card.
+
+
+OUTPUT FORMAT:
+--The output is only two numbers, the first is the card to change the rule, and the second is the card you want to put into your palette. 0 means you do not want to play this kind of card. For example, if you only want to put RED 5 in your palette, you should output "0 57". (Of course, "0 0" means withdrawing from this game.)
+--You can output by standard method stdout (using printf or cout), or can store them in "output.txt" (the main program will delete it every time to prevent other players seeing it). The “output.txt” should only be used if you cannot manage the running time.
+
+
+"log.txt"
+--the log for all games played
+--in order to avoid too large log, you can delete it by "rm log.txt"

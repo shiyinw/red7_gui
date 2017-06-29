@@ -8,6 +8,8 @@ class global
 {
 public:
     static QString meid;
+    static QString player1;
+    static QString player2;
 };
 
 

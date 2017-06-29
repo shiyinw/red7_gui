@@ -17,6 +17,8 @@ public:
 
 private:
     Ui::ai_fight *ui;
+    void naive_module_run();
+    void extend_module_run();
 };
 
 #endif // AI_FIGHT_H

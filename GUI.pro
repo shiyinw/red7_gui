@@ -29,20 +29,30 @@ SOURCES += \
     mainwindow.cpp \
     global.cpp \
     _playground.cpp \
-    ai_fight.cpp
+    ai_fight.cpp \
+    rules.cpp \
+    questions.cpp \
+    _naive_ai.cpp
 
 HEADERS  += \
     login.h \
     mainwindow.h \
     global.h \
     _playground.h \
-    ai_fight.h
+    ai_fight.h \
+    rules.h \
+    questions.h \
+    _naive_ai.h \
+    game.h \
+    colors.h
 
 FORMS    += \
     login.ui \
     mainwindow.ui \
     _playground.ui \
-    ai_fight.ui
+    ai_fight.ui \
+    rules.ui \
+    questions.ui
 
 DISTFILES +=
 

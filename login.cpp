@@ -3,6 +3,7 @@
 #include "mainwindow.h"
 #include "global.h"
 #include <QDebug>
+#include "rules.h"
 
 Login::Login(QWidget *parent) :
     QDialog(parent),
@@ -20,7 +21,7 @@ void Login::on_pushButton_clicked()
 {
     global::meid = this->ui->lineEdit->text();
     qDebug()<<"id: "<<global::meid<<endl;
-    MainWindow *w = new MainWindow;
+    Rules *w = new Rules;
     w->show();
     this->close();
 }

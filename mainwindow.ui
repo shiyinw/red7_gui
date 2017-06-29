@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>473</width>
-    <height>600</height>
+    <height>575</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -24,12 +24,18 @@
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout">
+     <item row="1" column="0">
+      <widget class="QListWidget" name="listWidget"/>
+     </item>
      <item row="0" column="1">
       <widget class="QLabel" name="label_2">
        <property name="text">
         <string>Player 2</string>
        </property>
       </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QListWidget" name="listWidget_2"/>
      </item>
      <item row="0" column="0">
       <widget class="QLabel" name="label">
@@ -38,25 +44,49 @@
        </property>
       </widget>
      </item>
-     <item row="1" column="0">
-      <widget class="QListWidget" name="listWidget"/>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>Choose</string>
+       </property>
+      </widget>
      </item>
-     <item row="1" column="1">
-      <widget class="QListWidget" name="listWidget_2"/>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="text">
+        <string>Choose</string>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="pushButton_3">
     <property name="geometry">
      <rect>
       <x>180</x>
-      <y>500</y>
+      <y>490</y>
       <width>113</width>
       <height>32</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton { background-color: rgb(255, 132, 139); border-radius: 3px; color: rgb(255, 255, 255); } QPushButton:hover { background-color: rgb(245, 69, 234); }</string>
+    </property>
     <property name="text">
-     <string>Start</string>
+     <string>Start😄</string>
+    </property>
+   </widget>
+   <widget class="QCommandLinkButton" name="commandLinkButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>480</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Question？</string>
     </property>
    </widget>
   </widget>

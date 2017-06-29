@@ -1,9 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <author/>
- <comment/>
- <exportmacro/>
  <class>Rules</class>
- <widget name="Rules" class="QMainWindow">
+ <widget class="QMainWindow" name="Rules">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -13,12 +11,141 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Rules</string>
   </property>
-  <widget name="menubar" class="QMenuBar"/>
-  <widget name="centralwidget" class="QWidget"/>
-  <widget name="statusbar" class="QStatusBar"/>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>761</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>759</width>
+       <height>499</height>
+      </rect>
+     </property>
+     <widget class="QTextBrowser" name="textBrowser">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>11</y>
+        <width>741</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.SF NS Text'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.25%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; background-color:#ffffff;&quot;&gt;Rules&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.25%; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:xx-large; font-weight:600; color:#24292e; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:16px; font-style:italic; color:#24292e;&quot;&gt;--------writed by Boyang Li&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:16px; color:#24292e; background-color:#ffffff;&quot;&gt;Red7 is a card game, in which players accumulate points through sets of game to achieve the final victory.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:24px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.25%; background-color:#ffffff;&quot;&gt;&lt;a name=&quot;user-content-1players&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:large; font-weight:600; color:#24292e;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:large; font-weight:600; color:#24292e;&quot;&gt;.PLAYERS&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:16px; color:#24292e; background-color:#ffffff;&quot;&gt;A game of red7 usually involves 2-4 players, among them one will finally prevail.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:24px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.25%; background-color:#ffffff;&quot;&gt;&lt;a name=&quot;user-content-2cards&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:large; font-weight:600; color:#24292e;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:large; font-weight:600; color:#24292e;&quot;&gt;.CARDS&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:16px; color:#24292e; background-color:#ffffff;&quot;&gt;The deck of cardsused in the game of red7 consists of 49 normal cards and 1 initial rule card.The normal cards come in seven colours, namely red, orange, yellow, green,blue, indigo and violet (it is worth noting that in certain Chinesetranslations, 蓝 actually corresponds to indigo with 青 representing blue). There are seven cards ofeach colour bearing the number 1-7.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:24px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.25%; background-color:#ffffff;&quot;&gt;&lt;a name=&quot;user-content-21valueof-cards&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:medium; font-weight:600; color:#24292e;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:medium; font-weight:600; color:#24292e;&quot;&gt;.1.Valueof cards&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:16px; color:#24292e; background-color:#ffffff;&quot;&gt;In the game of red7,every card has its value. When comparing the value of two cards, the one withlarger number on it is higher. If both bear the same number, they are ranked bytheir colours, with red the highest and violet the lowest.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:24px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.25%; background-color:#ffffff;&quot;&gt;&lt;a name=&quot;user-content-22rulesrepresented-by-cards&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:medium; font-weight:600; color:#24292e;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:medium; font-weight:600; color:#24292e;&quot;&gt;.2.Rulesrepresented by cards&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:16px; color:#24292e; background-color:#ffffff;&quot;&gt;The game of red7involves player playing some of their cards to a specific place called the rulepile. The colour of the latest card to arrive there designates the currentrule. The usage of the rules will be explained latter. The relations betweencolours and rules are as follows,&lt;/span&gt;&lt;/p&gt;
+&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:16px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot; bgcolor=&quot;#ffffff&quot;&gt;&lt;thead&gt;
+&lt;tr&gt;
+&lt;td bgcolor=&quot;#ffffff&quot; style=&quot; padding-left:13; padding-right:13; padding-top:6; padding-bottom:6;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:16px; font-weight:600; color:#24292e; background-color:#ffffff;&quot;&gt;RED&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot; style=&quot; padding-left:13; padding-right:13; padding-top:6; padding-bottom:6;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:16px; font-weight:600; color:#24292e; background-color:#ffffff;&quot;&gt;The highest card&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tr&gt;
+&lt;td bgcolor=&quot;#ffffff&quot; style=&quot; padding-left:13; padding-right:13; padding-top:6; padding-bottom:6;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:16px; color:#24292e; background-color:#ffffff;&quot;&gt;ORANGE&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot; style=&quot; padding-left:13; padding-right:13; padding-top:6; padding-bottom:6;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:16px; color:#24292e; background-color:#ffffff;&quot;&gt;Most cards of one number&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td bgcolor=&quot;#f6f8fa&quot; style=&quot; padding-left:13; padding-right:13; padding-top:6; padding-bottom:6;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:16px; color:#24292e; background-color:#f6f8fa;&quot;&gt;YELLOW&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td bgcolor=&quot;#f6f8fa&quot; style=&quot; padding-left:13; padding-right:13; padding-top:6; padding-bottom:6;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:16px; color:#24292e; background-color:#f6f8fa;&quot;&gt;Most cards of one colour&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td bgcolor=&quot;#ffffff&quot; style=&quot; padding-left:13; padding-right:13; padding-top:6; padding-bottom:6;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:16px; color:#24292e; background-color:#ffffff;&quot;&gt;GREEN&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot; style=&quot; padding-left:13; padding-right:13; padding-top:6; padding-bottom:6;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:16px; color:#24292e; background-color:#ffffff;&quot;&gt;Most even cards&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td bgcolor=&quot;#f6f8fa&quot; style=&quot; padding-left:13; padding-right:13; padding-top:6; padding-bottom:6;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:16px; color:#24292e; background-color:#f6f8fa;&quot;&gt;BLUE&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td bgcolor=&quot;#f6f8fa&quot; style=&quot; padding-left:13; padding-right:13; padding-top:6; padding-bottom:6;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:16px; color:#24292e; background-color:#f6f8fa;&quot;&gt;Most different colours&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td bgcolor=&quot;#ffffff&quot; style=&quot; padding-left:13; padding-right:13; padding-top:6; padding-bottom:6;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:16px; color:#24292e; background-color:#ffffff;&quot;&gt;INDIGO&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td bgcolor=&quot;#ffffff&quot; style=&quot; padding-left:13; padding-right:13; padding-top:6; padding-bottom:6;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:16px; color:#24292e; background-color:#ffffff;&quot;&gt;Most cards in a row*&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td bgcolor=&quot;#f6f8fa&quot; style=&quot; padding-left:13; padding-right:13; padding-top:6; padding-bottom:6;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:16px; color:#24292e; background-color:#f6f8fa;&quot;&gt;VIOLET&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td bgcolor=&quot;#f6f8fa&quot; style=&quot; padding-left:13; padding-right:13; padding-top:6; padding-bottom:6;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:16px; color:#24292e; background-color:#f6f8fa;&quot;&gt;Most cards below 4&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:16px; color:#24292e; background-color:#ffffff;&quot;&gt;*A single card,albeit short, is also considered a row.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:24px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.25%; background-color:#ffffff;&quot;&gt;&lt;a name=&quot;user-content-23the-initial-rulecard&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:medium; font-weight:600; color:#24292e;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:medium; font-weight:600; color:#24292e;&quot;&gt;.3.The initial rulecard&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:16px; color:#24292e; background-color:#ffffff;&quot;&gt;The initial rule cardis placed on the rule pile at the start of each set. It is red, meaning thateach set starts with the first rule, which may be changed latter when othercards are played to the rule pile. The initial rule card may not be shuffledwith other cards and may not be dealt to players.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:24px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.25%; background-color:#ffffff;&quot;&gt;&lt;a name=&quot;user-content-3sets&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:large; font-weight:600; color:#24292e;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:large; font-weight:600; color:#24292e;&quot;&gt;.SETS&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:16px; color:#24292e; background-color:#ffffff;&quot;&gt;A game of red7 consistsof one or multiple sets. Before each set, every player is dealt seven cards andone more as “palette”, which is placed face-up in front of him/her. Each gamestarts from the next player (clockwise) from the one whose palette has thehighest value and proceeds in clockwise order.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:24px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.25%; background-color:#ffffff;&quot;&gt;&lt;a name=&quot;user-content-31tosurvive&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:medium; font-weight:600; color:#24292e;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:medium; font-weight:600; color:#24292e;&quot;&gt;.1.Tosurvive&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:16px; color:#24292e; background-color:#ffffff;&quot;&gt;In each player’sturn, him/her may&lt;/span&gt;&lt;/p&gt;
+&lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:16px; color:#24292e;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16px;&quot;&gt;Play one card,face-up, to his palette. The set of all cards there is called their currentpalette.&lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:16px; color:#24292e;&quot; style=&quot; margin-top:4px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16px;&quot;&gt;Play one card,face-up, to the rule pile. This card will become the current rule.&lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:16px; color:#24292e;&quot; style=&quot; margin-top:4px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16px;&quot;&gt;Do both 1 and 2simultaneously.&lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:16px; color:#24292e;&quot; style=&quot; margin-top:4px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16px;&quot;&gt;Surrender. Theirpalette will be removed from the set of the game and mixed with other cards yetto be dealt.&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:16px; color:#24292e; background-color:#ffffff;&quot;&gt;A player can onlyperform 1-3 if such a move makes sure that their palette satisfies thedescription of the current rule, when compared with all other active players’palettes (i.e. if the rule is red, the player must have a card that is higherthan any other card in all palettes). Note that if the rule involves “mostcards” and some palettes have the same number of these cards, only the one withthe highest cards is considered to have the “most cards”. For instance, if thecurrent rule is yellow, “blue-7, blue-2” is considered to have “more” cardsthan “red-6, red-5” does. The collection of cards that comes highest under thecurrent rule is called the champion.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:24px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.25%; background-color:#ffffff;&quot;&gt;&lt;a name=&quot;user-content-32toprevail&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:medium; font-weight:600; color:#24292e;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:medium; font-weight:600; color:#24292e;&quot;&gt;.2.Toprevail&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:16px; color:#24292e; background-color:#ffffff;&quot;&gt;When everyone elsehas surrendered, a player wins the set. He/she takes away the champion from hispalette and preserve them until the game ends, which means the cards areremoved from the following sets (if any).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:24px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.25%; background-color:#ffffff;&quot;&gt;&lt;a name=&quot;user-content-4thegame&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:large; font-weight:600; color:#24292e;&quot;&gt;4&lt;/span&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:large; font-weight:600; color:#24292e;&quot;&gt;.TheGame&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:24px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.25%; background-color:#ffffff;&quot;&gt;&lt;a name=&quot;user-content-41points&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:medium; font-weight:600; color:#24292e;&quot;&gt;4&lt;/span&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:medium; font-weight:600; color:#24292e;&quot;&gt;.1.Points&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:16px; color:#24292e; background-color:#ffffff;&quot;&gt;By winning each set,player gain points that equals to the sum of all numbers on the cards thathe/she preserves. If more than one player has the same points, the one with thehighest card is defined to have more.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:24px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.25%; background-color:#ffffff;&quot;&gt;&lt;a name=&quot;user-content-42theend-literally&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:medium; font-weight:600; color:#24292e;&quot;&gt;4&lt;/span&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:medium; font-weight:600; color:#24292e;&quot;&gt;.2.Theend (literally)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:16px; color:#24292e; background-color:#ffffff;&quot;&gt;The game ends whenthere are not enough cards to deal for another set or a player’s points reach acertain criterion, which is 50-5*(the number of players). In either situation,the player with the most points wins.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>520</y>
+      <width>113</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Skip</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <pixmapfunction/>
+ <resources/>
  <connections/>
 </ui>

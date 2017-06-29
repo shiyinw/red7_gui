@@ -1,38 +1,33 @@
 #include <iostream>
 #include <fstream>
-#include <sstream>
-#include <sys/wait.h>
-#include <unistd.h>
-#include <cstdio>
-#include <cstdlib>
-#include <sys/types.h>
-#include <fcntl.h>
-#include <cstring>
-#include <signal.h>
 #include <ctime>
 #include <string>
-#include <vector>
+#include <sstream>
+#include <cstdio>
+#include <cstdlib>
 #include <list>
+#include <vector>
 #include <algorithm>
-#include <memory>
+
 using namespace std;
 
-#ifndef COLORS_H
-#define COLORS_H
 
-pid_t pid;
+#define MAX_PLAYERS 4
+#define MAX_ROUNDS 12
 
-void print_list_on_screen(list<int> a) {
-  for (list<int>::iterator it=a.begin();it!=a.end();it++)
-    cout << *it << " ";
-  cout << endl;
-}
 
-void print_list(list<int> a, ostringstream& r) {
-  for (list<int>::iterator it=a.begin();it!=a.end();it++)
-    r << *it << " ";
 
-}
+#define TIME_LIMIT 2
+
+int num_players;
+int player_index;
+int current_rule;
+
+
+list<int> palette[MAX_PLAYERS];
+bool active[MAX_PLAYERS];
+list<int> hand;
+int hand_size[MAX_PLAYERS];
 
 bool compare(list<int> a, list<int> b) {    //if a is higher than b, return true
   if (a.size()==0) return false;
@@ -58,7 +53,7 @@ list<int> orange(list<int> a) {
   for (int i=2;i<8;i++)
     if (compare(n[i],best)) best=n[i];
 
-  return best;
+  return best;   
 
 }
 
@@ -71,7 +66,7 @@ list<int> yellow(list<int> a) {
   for (int i=2;i<8;i++)
     if (compare(n[i],best)) best=n[i];
 
-  return best;
+  return best;   
 
 }
 
@@ -116,9 +111,79 @@ list<int> violet(list<int> a) {
 }
 
 
-void overtime(int param) {
-    kill(pid,SIGKILL);
-    cerr << "Killing process " << pid << endl;
+int winning(int rule) {
+  if (rule==0) rule=current_rule;
+  int i,win;
+  win=-1;
+  list<int> best, top;
+  for (i=0;i<num_players;i++)
+    if (active[i]) {
+      top.clear();
+      switch (rule) {
+      case 7: top=red(palette[i]); break;
+      case 6: top=orange(palette[i]); break;
+      case 5: top=yellow(palette[i]); break;
+      case 4: top=green(palette[i]); break;
+      case 3: top=blue(palette[i]); break;
+      case 2: top=indigo(palette[i]); break;
+      case 1: top=violet(palette[i]); break;
+      }
+      
+      if (compare(top,best)) {
+	best=top;
+	win=i;
+      }
+    }
+  //  highest=best;
+  return win;
 }
 
-#endif
+int main(int argc, char *argv[]) {
+  srand(clock());
+
+
+  cin >> num_players;
+  cin >> player_index;
+  cin >> current_rule;
+
+  int i,j,n,m;
+  cin >> n;
+  for (i=0;i<n;i++) {
+    cin >> m;
+    hand.push_back(m);
+  }
+
+  for (i=0;i<num_players;i++)
+    {
+      cin >> hand_size[i];
+      cin >> n;
+      if (n==0) active[i]=false;
+      else {
+	active[i]=true;
+	for (j=0;j<n;j++)
+	  {
+	    cin >> m;
+	    palette[i].push_back(m);
+	  }
+      }
+    }
+
+  vector<int> v;
+  for (list<int>::iterator it=hand.begin();it!=hand.end();it++)    
+    v.push_back(*it);
+  n=rand()%v.size();
+  cout << v[n] << " ";
+  v.erase(v.begin()+n);
+  if (v.size()>0) {
+      n=rand()%v.size();
+      cout << v[n] << " " << endl;
+  }
+  else cout << 0 << endl;
+
+  
+
+
+  return 0;
+ 
+}
+

@@ -1,3 +1,4 @@
+#include "mainwindow.h"
 #include "rules.h"
 #include "ui_rules.h"
 
@@ -11,4 +12,11 @@ Rules::Rules(QWidget *parent) :
 Rules::~Rules()
 {
     delete ui;
+}
+
+void Rules::on_pushButton_clicked()
+{
+    MainWindow *w = new MainWindow;
+    w->show();
+    this->close();
 }
