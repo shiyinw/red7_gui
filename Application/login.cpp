@@ -3,6 +3,8 @@
 #include "mainwindow.h"
 #include "global.h"
 #include <QDebug>
+#include <QProcess>
+#include <QMessageBox>
 #include "rules.h"
 
 Login::Login(QWidget *parent) :

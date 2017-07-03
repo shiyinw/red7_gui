@@ -2,7 +2,10 @@
 #include <QSplashScreen>
 #include <QThread>
 #include <QString>
+#include <QDebug>
+#include <QDir>
 #include "login.h"
+#include "global.h"
 
 int main(int argc, char *argv[])
 {
@@ -14,6 +17,9 @@ int main(int argc, char *argv[])
     ss.showMessage("Welcome to Red7", Qt::AlignCenter, Qt::white);
     a.processEvents();
     QThread::sleep(1);
+
+    global::path = QDir::currentPath();
+    qDebug()<<"path: "<<global::path<<endl;
 
     Login *w = new Login;
     w->show();

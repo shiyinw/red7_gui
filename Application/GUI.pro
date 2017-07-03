@@ -31,8 +31,7 @@ SOURCES += \
     _playground.cpp \
     ai_fight.cpp \
     rules.cpp \
-    questions.cpp \
-    _naive_ai.cpp
+    questions.cpp
 
 HEADERS  += \
     login.h \
@@ -42,7 +41,6 @@ HEADERS  += \
     ai_fight.h \
     rules.h \
     questions.h \
-    _naive_ai.h \
     game.h \
     colors.h
 
