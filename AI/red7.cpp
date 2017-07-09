@@ -32,12 +32,12 @@ int num_rounds=7;
 
 #define TIME_LIMIT 2
 
-int scores[MAX_PLAYERS];
+int scores[MAX_PLAYERS];///
 
-pid_t pid;
+pid_t pid;///
 
 
-string player_file[MAX_PLAYERS];
+string player_file[MAX_PLAYERS];///
 
 void print_list_on_screen(list<int> a) {
   for (list<int>::iterator it=a.begin();it!=a.end();it++)

@@ -10,6 +10,7 @@ public:
     static QString meid;
     static QString player1;
     static QString player2;
+    static QString path;
 };
 
 
