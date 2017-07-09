@@ -31,7 +31,10 @@ SOURCES += \
     _playground.cpp \
     ai_fight.cpp \
     rules.cpp \
-    questions.cpp
+    questions.cpp \
+    congratulation.cpp \
+    AI.cpp \
+    Common.cpp
 
 HEADERS  += \
     login.h \
@@ -42,7 +45,10 @@ HEADERS  += \
     rules.h \
     questions.h \
     game.h \
-    colors.h
+    colors.h \
+    congratulation.h \
+    AI.h \
+    Common.h
 
 FORMS    += \
     login.ui \
@@ -50,7 +56,8 @@ FORMS    += \
     _playground.ui \
     ai_fight.ui \
     rules.ui \
-    questions.ui
+    questions.ui \
+    congratulation.ui
 
 DISTFILES +=
 

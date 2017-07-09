@@ -64,7 +64,8 @@ void MainWindow::on_pushButton_clicked()
         global::player1=s;
 
         QProcess p(0);
-        QString cmd = "cp -av "+fileName+" "+global::path+"/../../../../AI";
+        QString cmd = "cp -av "+fileName+" "+global::path+"/AI/your_ai_1";
+        qDebug()<<"copy path"<<global::path+"/AI/your_ai_1"<<endl;
         qDebug()<<cmd<<endl;
         p.start(cmd);
         p.waitForStarted();
@@ -103,9 +104,14 @@ void MainWindow::on_pushButton_2_clicked()
         global::player2=s;
         qDebug()<<"player2: "<<s<<endl;
         QProcess p(0);
-        p.start("cmd", QStringList()<<"/c"<<"cp -av "<<fileName<<" ../AI");
+        QString cmd = "cp -av "+fileName+" "+global::path+"/AI/your_ai_2";
+        p.start(cmd);
         p.waitForStarted();
         p.waitForFinished();
+        QString strTemp=QString::fromLocal8Bit(p.readAllStandardOutput());
+        QMessageBox testMassage;
+        testMassage.setText(strTemp);
+        testMassage.exec();
 
     }
     else if(_player2=="Naive AI")

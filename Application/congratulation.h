@@ -15,7 +15,7 @@ public:
     explicit congratulation(QWidget *parent = 0);
     ~congratulation();
 
-private:
+public:
     Ui::congratulation *ui;
 };
 

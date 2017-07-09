@@ -11,6 +11,7 @@
 
 #include <list>
 #include <iostream>
+#include <QString>
 using namespace std;
 
 bool compare(list<int> a, list<int> b);   //if a is higher than b, return true
@@ -28,5 +29,9 @@ bool rule_compare(list<int>a, list<int>b, int r);
 void print(list<int> h1, list<int> p1, list<int> h2, list<int> p2, int r);
 
 void print(list<int> a);
+
+QString name(int a);
+
+int reverse_name(QString n);
 
 #endif

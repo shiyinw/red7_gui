@@ -20,12 +20,7 @@ public:
     list<int> my_hand, my_palette, op_palette;
     list<int> _strategy;
     int _rule;
-    bool alive;
 public:
-    AI()
-    {
-        alive=1;
-    }
     void see(list<int> a, list<int>b, list<int>c, int r)
     {
         my_hand = a;
@@ -77,10 +72,6 @@ class Trivial:public AI
 {
 public:
     int play();
-    Trivial()
-    {
-        alive=1;
-    }
 };
 
 
