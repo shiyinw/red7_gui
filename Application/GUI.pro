@@ -32,9 +32,7 @@ SOURCES += \
     ai_fight.cpp \
     rules.cpp \
     questions.cpp \
-    congratulation.cpp \
-    AI.cpp \
-    Common.cpp
+    congratulation.cpp
 
 HEADERS  += \
     login.h \
@@ -46,9 +44,7 @@ HEADERS  += \
     questions.h \
     game.h \
     colors.h \
-    congratulation.h \
-    AI.h \
-    Common.h
+    congratulation.h
 
 FORMS    += \
     login.ui \

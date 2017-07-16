@@ -143,13 +143,13 @@ void ai_fight::print(QLabel *q, int a)
     QString number = QString::number(a/10);
     q->setText(number);
     int color = a%10;
-    if(color==7)    q->setStyleSheet("QLabel { background-color : red; color : white; }");
-    else if(color==6)   q->setStyleSheet("QLabel { background-color : orange; color : white; }");
-    else if(color==5)   q->setStyleSheet("QLabel { background-color : yellow; color : white; }");
+    if(color==1)    q->setStyleSheet("QLabel { background-color : red; color : white; }");
+    else if(color==2)   q->setStyleSheet("QLabel { background-color : orange; color : white; }");
+    else if(color==3)   q->setStyleSheet("QLabel { background-color : yellow; color : white; }");
     else if(color==4)   q->setStyleSheet("QLabel { background-color : green; color : white; }");
-    else if(color==3)   q->setStyleSheet("QLabel { background-color : cyan; color : white; }");
-    else if(color==2)   q->setStyleSheet("QLabel { background-color : blue; color : white; }");
-    else if(color==1)   q->setStyleSheet("QLabel { background-color : purple; color : white; }");
+    else if(color==5)   q->setStyleSheet("QLabel { background-color : cyan; color : white; }");
+    else if(color==6)   q->setStyleSheet("QLabel { background-color : blue; color : white; }");
+    else if(color==7)   q->setStyleSheet("QLabel { background-color : purple; color : white; }");
     else if(color==0)
     {
         q->setStyleSheet("QLabel { background-color : black; color : white; }");
